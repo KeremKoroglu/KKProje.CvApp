@@ -1,0 +1,18 @@
+﻿@{
+    Layout = null;
+
+}
+@model  List<KKProje.CvApp.Entities.Concrete.Skill>
+    <html xmlns="http://www.w3.org/1999/xhtml">
+    <head>
+        <title>Test</title>
+    </head>
+    <body>
+        @foreach (var item in Model)
+        {
+        <span>@item.Id</span>
+        <span>@item.Description</span>
+        <br />
+        }
+    </body>
+    </html>
